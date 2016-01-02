@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2612E2CA1C387773000720CC /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2612E2C91C387773000720CC /* DataService.swift */; };
 		26D03F0E1C385AF3004EA436 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D03F0D1C385AF3004EA436 /* AppDelegate.swift */; };
 		26D03F101C385AF3004EA436 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D03F0F1C385AF3004EA436 /* ViewController.swift */; };
 		26D03F131C385AF3004EA436 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26D03F111C385AF3004EA436 /* Main.storyboard */; };
@@ -23,9 +24,12 @@
 		26D03F381C386D72004EA436 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D03F351C386D72004EA436 /* Bolts.framework */; };
 		26D03F391C386D72004EA436 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D03F361C386D72004EA436 /* FBSDKCoreKit.framework */; };
 		26D03F3A1C386D72004EA436 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D03F371C386D72004EA436 /* FBSDKLoginKit.framework */; };
+		797964D70A17225526B59D32 /* Pods_digi_life_showcase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEA766EE452B11554D9077F8 /* Pods_digi_life_showcase.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04D8158CD7484B56959125D9 /* Pods-digi-life-showcase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-digi-life-showcase.release.xcconfig"; path = "Pods/Target Support Files/Pods-digi-life-showcase/Pods-digi-life-showcase.release.xcconfig"; sourceTree = "<group>"; };
+		2612E2C91C387773000720CC /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		26D03F0A1C385AF3004EA436 /* digi-life-showcase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "digi-life-showcase.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		26D03F0D1C385AF3004EA436 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26D03F0F1C385AF3004EA436 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -44,6 +48,8 @@
 		26D03F351C386D72004EA436 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		26D03F361C386D72004EA436 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		26D03F371C386D72004EA436 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		6D2F2DBB6212E79AF0963DA5 /* Pods-digi-life-showcase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-digi-life-showcase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-digi-life-showcase/Pods-digi-life-showcase.debug.xcconfig"; sourceTree = "<group>"; };
+		AEA766EE452B11554D9077F8 /* Pods_digi_life_showcase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_digi_life_showcase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,17 +60,36 @@
 				26D03F381C386D72004EA436 /* Bolts.framework in Frameworks */,
 				26D03F391C386D72004EA436 /* FBSDKCoreKit.framework in Frameworks */,
 				26D03F3A1C386D72004EA436 /* FBSDKLoginKit.framework in Frameworks */,
+				797964D70A17225526B59D32 /* Pods_digi_life_showcase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1223366B912DD5D7ED893628 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AEA766EE452B11554D9077F8 /* Pods_digi_life_showcase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2612E2C81C38775E000720CC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2612E2C91C387773000720CC /* DataService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		26D03F011C385AF3004EA436 = {
 			isa = PBXGroup;
 			children = (
 				26D03F0C1C385AF3004EA436 /* digi-life-showcase */,
 				26D03F0B1C385AF3004EA436 /* Products */,
+				ED6DB2220EA808BA68E31F40 /* Pods */,
+				1223366B912DD5D7ED893628 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +104,7 @@
 		26D03F0C1C385AF3004EA436 /* digi-life-showcase */ = {
 			isa = PBXGroup;
 			children = (
+				2612E2C81C38775E000720CC /* Services */,
 				26D03F341C386D62004EA436 /* Frameworks */,
 				26D03F2D1C385F3B004EA436 /* Util */,
 				26D03F211C385B0F004EA436 /* Model */,
@@ -148,6 +174,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		ED6DB2220EA808BA68E31F40 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6D2F2DBB6212E79AF0963DA5 /* Pods-digi-life-showcase.debug.xcconfig */,
+				04D8158CD7484B56959125D9 /* Pods-digi-life-showcase.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -155,9 +190,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 26D03F1C1C385AF3004EA436 /* Build configuration list for PBXNativeTarget "digi-life-showcase" */;
 			buildPhases = (
+				0F3BD7EC26F2417310422620 /* Check Pods Manifest.lock */,
 				26D03F061C385AF3004EA436 /* Sources */,
 				26D03F071C385AF3004EA436 /* Frameworks */,
 				26D03F081C385AF3004EA436 /* Resources */,
+				CC4B60C498DD69A87E63F75D /* Embed Pods Frameworks */,
+				E9C3282BF23991170C84B32B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -218,12 +256,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0F3BD7EC26F2417310422620 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CC4B60C498DD69A87E63F75D /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-digi-life-showcase/Pods-digi-life-showcase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9C3282BF23991170C84B32B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-digi-life-showcase/Pods-digi-life-showcase-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		26D03F061C385AF3004EA436 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				26D03F331C386713004EA436 /* MaterialTextField.swift in Sources */,
+				2612E2CA1C387773000720CC /* DataService.swift in Sources */,
 				26D03F2C1C385F03004EA436 /* MaterialView.swift in Sources */,
 				26D03F101C385AF3004EA436 /* ViewController.swift in Sources */,
 				26D03F0E1C385AF3004EA436 /* AppDelegate.swift in Sources */,
@@ -339,6 +426,7 @@
 		};
 		26D03F1D1C385AF3004EA436 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D2F2DBB6212E79AF0963DA5 /* Pods-digi-life-showcase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -354,6 +442,7 @@
 		};
 		26D03F1E1C385AF3004EA436 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04D8158CD7484B56959125D9 /* Pods-digi-life-showcase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -386,6 +475,7 @@
 				26D03F1E1C385AF3004EA436 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

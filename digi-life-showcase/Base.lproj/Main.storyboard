@@ -76,6 +76,9 @@
                                                 <state key="normal" title="FACEBOOK LOGIN">
                                                     <color key="titleColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="fbBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="24C-Hz-eCe"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -123,6 +126,9 @@
                                         <state key="normal" title="Login / Signup">
                                             <color key="titleColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="attemptLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bgs-Lc-BF9"/>
+                                        </connections>
                                     </button>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y2R-0L-L2L" customClass="MaterialTextField" customModule="digi_life_showcase" customModuleProvider="target">
                                         <rect key="frame" x="20" y="116" width="520" height="35"/>
@@ -132,7 +138,7 @@
                                         </constraints>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -164,10 +170,33 @@
                             <constraint firstItem="DPq-TM-Nx4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="y0d-bM-pKw"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="qA4-eH-OP1" id="tem-3r-hpm"/>
+                        <outlet property="passwordField" destination="Y2R-0L-L2L" id="vnQ-XM-yeG"/>
+                        <segue destination="tot-R6-1lJ" kind="show" identifier="loggedIn" id="VPi-tU-n8h"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="544" y="429"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="JRB-8c-BHZ">
+            <objects>
+                <viewController id="tot-R6-1lJ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6wb-uk-Ixe"/>
+                        <viewControllerLayoutGuide type="bottom" id="G7v-yz-NuW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dOu-dh-Jj4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tie-lS-AIs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1288" y="429"/>
         </scene>
     </scenes>
     <resources>
