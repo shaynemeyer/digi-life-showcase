@@ -20,6 +20,9 @@
 		26D03F2F1C385F4C004EA436 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D03F2E1C385F4C004EA436 /* Constants.swift */; };
 		26D03F311C386354004EA436 /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D03F301C386354004EA436 /* MaterialButton.swift */; };
 		26D03F331C386713004EA436 /* MaterialTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D03F321C386713004EA436 /* MaterialTextField.swift */; };
+		26D03F381C386D72004EA436 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D03F351C386D72004EA436 /* Bolts.framework */; };
+		26D03F391C386D72004EA436 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D03F361C386D72004EA436 /* FBSDKCoreKit.framework */; };
+		26D03F3A1C386D72004EA436 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D03F371C386D72004EA436 /* FBSDKLoginKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,9 @@
 		26D03F2E1C385F4C004EA436 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		26D03F301C386354004EA436 /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialButton.swift; sourceTree = "<group>"; };
 		26D03F321C386713004EA436 /* MaterialTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialTextField.swift; sourceTree = "<group>"; };
+		26D03F351C386D72004EA436 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		26D03F361C386D72004EA436 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		26D03F371C386D72004EA436 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +51,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26D03F381C386D72004EA436 /* Bolts.framework in Frameworks */,
+				26D03F391C386D72004EA436 /* FBSDKCoreKit.framework in Frameworks */,
+				26D03F3A1C386D72004EA436 /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +79,7 @@
 		26D03F0C1C385AF3004EA436 /* digi-life-showcase */ = {
 			isa = PBXGroup;
 			children = (
+				26D03F341C386D62004EA436 /* Frameworks */,
 				26D03F2D1C385F3B004EA436 /* Util */,
 				26D03F211C385B0F004EA436 /* Model */,
 				26D03F201C385B0A004EA436 /* View */,
@@ -126,6 +136,16 @@
 				26D03F2E1C385F4C004EA436 /* Constants.swift */,
 			);
 			name = Util;
+			sourceTree = "<group>";
+		};
+		26D03F341C386D62004EA436 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				26D03F351C386D72004EA436 /* Bolts.framework */,
+				26D03F361C386D72004EA436 /* FBSDKCoreKit.framework */,
+				26D03F371C386D72004EA436 /* FBSDKLoginKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,6 +341,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/digi-life-showcase",
+				);
 				INFOPLIST_FILE = "digi-life-showcase/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.maynesoft.digi-life-showcase";
@@ -332,6 +356,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/digi-life-showcase",
+				);
 				INFOPLIST_FILE = "digi-life-showcase/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.maynesoft.digi-life-showcase";
