@@ -10,8 +10,10 @@
             <string>NotoSans-Bold</string>
             <string>NotoSans-Bold</string>
             <string>NotoSans-Bold</string>
+            <string>NotoSans-Bold</string>
         </mutableArray>
         <mutableArray key="NotoSans-Regular.ttf">
+            <string>NotoSans</string>
             <string>NotoSans</string>
         </mutableArray>
     </customFonts>
@@ -100,18 +102,45 @@
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qA4-eH-OP1">
-                                        <rect key="frame" x="20" y="49" width="520" height="30"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qA4-eH-OP1" customClass="MaterialTextField" customModule="digi_life_showcase" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="61" width="520" height="35"/>
                                         <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="deviceRGB"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y2R-0L-L2L" customClass="MaterialTextField" customModule="digi_life_showcase" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="116" width="520" height="35"/>
+                                        <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="deviceRGB"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wUd-zd-Gcj" customClass="MaterialButton" customModule="digi_life_showcase" customModuleProvider="target">
+                                        <rect key="frame" x="182" y="171" width="196" height="33"/>
+                                        <color key="backgroundColor" red="0.1094143772" green="0.62580886989999995" blue="0.35367705579999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="33" id="gE0-xN-eDr"/>
+                                            <constraint firstAttribute="width" constant="196" id="glM-xm-Ygd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="NotoSans-Bold" family="Noto Sans" pointSize="15"/>
+                                        <state key="normal" title="Login / Signup">
+                                            <color key="titleColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="Y2R-0L-L2L" firstAttribute="trailing" secondItem="qA4-eH-OP1" secondAttribute="trailing" id="1wQ-vs-B72"/>
                                     <constraint firstItem="z0g-Lh-Pux" firstAttribute="leading" secondItem="jGp-ba-mRQ" secondAttribute="leading" constant="20" id="5F2-0I-UK6"/>
+                                    <constraint firstAttribute="trailing" secondItem="qA4-eH-OP1" secondAttribute="trailing" constant="20" id="cmz-3c-RBb"/>
+                                    <constraint firstItem="Y2R-0L-L2L" firstAttribute="leading" secondItem="qA4-eH-OP1" secondAttribute="leading" id="dP2-I8-d91"/>
+                                    <constraint firstItem="wUd-zd-Gcj" firstAttribute="top" secondItem="Y2R-0L-L2L" secondAttribute="bottom" constant="50" id="fvw-eU-3gq"/>
                                     <constraint firstItem="z0g-Lh-Pux" firstAttribute="top" secondItem="jGp-ba-mRQ" secondAttribute="top" constant="20" id="hwp-C6-D4r"/>
+                                    <constraint firstItem="qA4-eH-OP1" firstAttribute="leading" secondItem="z0g-Lh-Pux" secondAttribute="leading" id="iG8-ST-2aa"/>
+                                    <constraint firstItem="Y2R-0L-L2L" firstAttribute="top" secondItem="qA4-eH-OP1" secondAttribute="bottom" constant="20" id="q2h-6b-NQi"/>
+                                    <constraint firstItem="qA4-eH-OP1" firstAttribute="top" secondItem="z0g-Lh-Pux" secondAttribute="bottom" constant="20" id="qs7-Yx-3YN"/>
+                                    <constraint firstItem="wUd-zd-Gcj" firstAttribute="centerX" secondItem="jGp-ba-mRQ" secondAttribute="centerX" id="ynR-T6-cQY"/>
                                 </constraints>
                             </view>
                         </subviews>
