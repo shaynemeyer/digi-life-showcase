@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26119FC01C3B12E300A38659 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26119FBF1C3B12E300A38659 /* Post.swift */; };
 		2612E2CA1C387773000720CC /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2612E2C91C387773000720CC /* DataService.swift */; };
 		26D03F0E1C385AF3004EA436 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D03F0D1C385AF3004EA436 /* AppDelegate.swift */; };
 		26D03F101C385AF3004EA436 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D03F0F1C385AF3004EA436 /* ViewController.swift */; };
@@ -31,6 +32,7 @@
 
 /* Begin PBXFileReference section */
 		04D8158CD7484B56959125D9 /* Pods-digi-life-showcase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-digi-life-showcase.release.xcconfig"; path = "Pods/Target Support Files/Pods-digi-life-showcase/Pods-digi-life-showcase.release.xcconfig"; sourceTree = "<group>"; };
+		26119FBF1C3B12E300A38659 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		2612E2C91C387773000720CC /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		26D03F0A1C385AF3004EA436 /* digi-life-showcase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "digi-life-showcase.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		26D03F0D1C385AF3004EA436 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 		26D03F211C385B0F004EA436 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				26119FBF1C3B12E300A38659 /* Post.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 				26D03F0E1C385AF3004EA436 /* AppDelegate.swift in Sources */,
 				26D03F2F1C385F4C004EA436 /* Constants.swift in Sources */,
 				26D03F311C386354004EA436 /* MaterialButton.swift in Sources */,
+				26119FC01C3B12E300A38659 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
