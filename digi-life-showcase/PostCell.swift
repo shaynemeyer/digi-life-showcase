@@ -40,6 +40,7 @@ class PostCell: UITableViewCell {
             
             if img != nil {
                 self.showcaseImg.image = img
+                self.showcaseImg.hidden = false
             } else {
                 request = Alamofire.request(.GET, post.imageUrl!).validate(contentType: ["image/*"]).response(completionHandler: { request, response, data, err in
                     
